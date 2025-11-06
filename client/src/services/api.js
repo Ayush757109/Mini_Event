@@ -1,4 +1,8 @@
-const API_BASE_URL = '/api';
+const API_BASE_URL =
+  import.meta.env.MODE === 'development'
+    ? 'http://localhost:3000/api'
+    : 'https://mini-event.onrender.com/api';
+
 
 const handleResponse = async (response) => {
   const data = await response.json();
