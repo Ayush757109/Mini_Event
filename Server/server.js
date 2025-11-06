@@ -20,7 +20,7 @@ connectDatabase();
 
 // Middleware
 app.use(cors({
-  origin: "https://mini-eventfrontend.onrender.com",
+  origin: "https://mini-eventfropntend1.onrender.com",
   methods:["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 })); // Enable CORS for all routes
