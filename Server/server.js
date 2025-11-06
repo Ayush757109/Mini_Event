@@ -19,7 +19,11 @@ const PORT = process.env.PORT || 3000;
 connectDatabase();
 
 // Middleware
-app.use(cors()); // Enable CORS for all routes
+app.use(cors({
+  origin: "https://mini-eventfrontend.onrender.com",
+  methods:["GET", "POST", "PUT", "DELETE"],
+  credentials: true,
+})); // Enable CORS for all routes
 app.use(express.json()); // Parse JSON request bodies
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 
