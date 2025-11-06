@@ -1,7 +1,4 @@
-const API_BASE_URL =
-  import.meta.env.MODE === 'development'
-    ? 'http://localhost:3000/api'
-    : 'https://mini-eventbackend.onrender.com/api';
+const API_BASE_URL ='https:mini-eventbackend1.onrender.com/api';
 
 
 const handleResponse = async (response) => {
